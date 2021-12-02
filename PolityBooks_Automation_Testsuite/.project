@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>PolityBooks_Automation_Testsuite</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/Selenium2Library.py</name>
+			<type>1</type>
+			<location>C:/Users/swpaul/AppData/Roaming/Python/Python39/site-packages/SeleniumLibrary/keywords/element.py</location>
+		</link>
+	</linkedResources>
+</projectDescription>

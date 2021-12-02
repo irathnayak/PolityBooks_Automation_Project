@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210810 16:43:09.317" rpa="false" schemaversion="2">
+<suite id="s1" name="PolityBooks Automation Project" source="C:\politybooks-automation\PolityBooks_Automation_Project">
+<suite id="s1-s1" name="PolityBooks Automation Testsuite" source="C:\politybooks-automation\PolityBooks_Automation_Project\PolityBooks_Automation_Testsuite">
+<suite id="s1-s1-s1" name="PolityBooks Testsuite" source="C:\politybooks-automation\PolityBooks_Automation_Project\PolityBooks_Automation_Testsuite\PolityBooks_Testsuite.robot">
+<test id="s1-s1-s1-t1" name="Polity Books Login">
+=======
+<robot generator="Robot 3.2.1 (Python 3.8.1 on win32)" generated="20210820 22:24:42.599" rpa="false">
+<suite id="s1" name="PolityBooks Automation Project" source="C:\Users\bmukherjee\PolityBooks_Automation_Project">
+<suite id="s1-s1" name="PolityBooks Automation Testsuite" source="C:\Users\bmukherjee\PolityBooks_Automation_Project\PolityBooks_Automation_Testsuite">
+<suite id="s1-s1-s1" name="PolityBooks Testsuite" source="C:\Users\bmukherjee\PolityBooks_Automation_Project\PolityBooks_Automation_Testsuite\PolityBooks_Testsuite.robot">
+<test id="s1-s1-s1-t1" name="POLITY_121_Verify Subject Header content Successfully loaded">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+>>>>>>> b5d0d4c3727e4490d6633700c9be3c4eae0281a6
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+<<<<<<< HEAD
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210810 16:43:09.867" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210810 16:43:09.866" endtime="20210810 16:43:13.705"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210810 16:43:13.706" endtime="20210810 16:43:13.895"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210810 16:43:15.897" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210810 16:43:13.896" endtime="20210810 16:43:15.897"/>
+</kw>
+<kw name="PolityBooks Login" library="PolityBooks_Resources">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/nav/div[1]/div/a/img</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20210810 16:43:15.921" level="INFO">Current page contains element 'xpath=//*[@id="root"]/div[1]/div[2]/div/nav/div[1]/div/a/img'.</msg>
+<status status="PASS" starttime="20210810 16:43:15.899" endtime="20210810 16:43:15.922"/>
+</kw>
+<status status="PASS" starttime="20210810 16:43:15.898" endtime="20210810 16:43:15.922"/>
+=======
+</arguments>
+<msg timestamp="20210820 22:24:43.338" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:24:43.338" endtime="20210820 22:24:50.103"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:24:50.103" endtime="20210820 22:24:50.275"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:24:52.287" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:24:50.275" endtime="20210820 22:24:52.287"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:24:52.288" endtime="20210820 22:24:52.319"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:24:52.470" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-148.png"&gt;&lt;img src="selenium-screenshot-148.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:24:52.319" endtime="20210820 22:24:52.470"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:24:43.336" endtime="20210820 22:24:52.472"></status>
+</kw>
+<kw name="Verify Subject Header content" library="PolityBooks_Resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Subject headerXpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:24:52.472" level="INFO">Clicking element '//a[contains(text(),'Subjects')]'.</msg>
+<status status="PASS" starttime="20210820 22:24:52.472" endtime="20210820 22:24:53.037"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210820 22:24:58.058" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210820 22:24:53.037" endtime="20210820 22:24:58.058"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${subjectheadercontaitext}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:24:58.058" endtime="20210820 22:24:58.112"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:00.124" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:24:58.112" endtime="20210820 22:25:00.124"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:00.285" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-149.png"&gt;&lt;img src="selenium-screenshot-149.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:00.124" endtime="20210820 22:25:00.285"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:24:52.472" endtime="20210820 22:25:00.285"></status>
+</kw>
+<kw name="Verify Home and Our Subjects Links appears in header" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:02.303" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:00.285" endtime="20210820 22:25:02.303"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${OuSubjectsXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:02.303" endtime="20210820 22:25:02.624"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:04.669" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:02.626" endtime="20210820 22:25:04.669"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:00.285" endtime="20210820 22:25:04.669"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210820 22:25:04.669" endtime="20210820 22:25:08.649"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:24:43.328" endtime="20210820 22:25:08.649" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="POLITY_123_Verify Subjects list blocks appears in Subject page">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:25:08.660" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:25:08.649" endtime="20210820 22:25:14.377"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:25:14.377" endtime="20210820 22:25:14.544"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:16.665" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:14.544" endtime="20210820 22:25:16.665"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:16.665" endtime="20210820 22:25:16.833"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:17.007" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-150.png"&gt;&lt;img src="selenium-screenshot-150.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:16.833" endtime="20210820 22:25:17.015"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:08.649" endtime="20210820 22:25:17.015"></status>
+</kw>
+<kw name="Verify Subject Header content" library="PolityBooks_Resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Subject headerXpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:25:17.015" level="INFO">Clicking element '//a[contains(text(),'Subjects')]'.</msg>
+<status status="PASS" starttime="20210820 22:25:17.015" endtime="20210820 22:25:17.758"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:22.852" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:17.758" endtime="20210820 22:25:22.852"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${subjectheadercontaitext}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:22.852" endtime="20210820 22:25:23.112"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:25.116" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:23.113" endtime="20210820 22:25:25.116"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:25.301" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-151.png"&gt;&lt;img src="selenium-screenshot-151.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:25.116" endtime="20210820 22:25:25.301"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:17.015" endtime="20210820 22:25:25.301"></status>
+</kw>
+<kw name="verify subjects list blocks appears in subject page" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:27.305" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:25.301" endtime="20210820 22:25:27.305"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${subjectlistmainblockXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:27.305" endtime="20210820 22:25:27.335"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${historyblockXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:27.335" endtime="20210820 22:25:27.351"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:28.357" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210820 22:25:27.351" endtime="20210820 22:25:28.357"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:28.489" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-152.png"&gt;&lt;img src="selenium-screenshot-152.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:28.357" endtime="20210820 22:25:28.489"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:25.301" endtime="20210820 22:25:28.489"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210820 22:25:28.489" endtime="20210820 22:25:32.614"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:25:08.649" endtime="20210820 22:25:32.614" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="POLITY_123_Verify on click subject block redirects to respective blocks">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:25:32.618" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:25:32.618" endtime="20210820 22:25:36.910"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:25:36.910" endtime="20210820 22:25:37.049"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:39.054" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:37.049" endtime="20210820 22:25:39.054"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:39.054" endtime="20210820 22:25:39.070"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:39.222" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-153.png"&gt;&lt;img src="selenium-screenshot-153.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:39.070" endtime="20210820 22:25:39.222"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:32.617" endtime="20210820 22:25:39.222"></status>
+</kw>
+<kw name="Verify Subject Header content" library="PolityBooks_Resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Subject headerXpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:25:39.222" level="INFO">Clicking element '//a[contains(text(),'Subjects')]'.</msg>
+<status status="PASS" starttime="20210820 22:25:39.222" endtime="20210820 22:25:39.422"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:44.425" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:39.422" endtime="20210820 22:25:44.425"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${subjectheadercontaitext}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:44.425" endtime="20210820 22:25:44.440"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:46.453" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:44.440" endtime="20210820 22:25:46.453"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:46.582" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-154.png"&gt;&lt;img src="selenium-screenshot-154.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:46.453" endtime="20210820 22:25:46.582"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:39.222" endtime="20210820 22:25:46.582"></status>
+</kw>
+<kw name="verify subjects list blocks appears in subject page" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:48.597" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:46.582" endtime="20210820 22:25:48.597"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${subjectlistmainblockXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:48.597" endtime="20210820 22:25:48.612"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${historyblockXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:48.612" endtime="20210820 22:25:48.635"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:49.657" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210820 22:25:48.635" endtime="20210820 22:25:49.657"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:49.773" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-155.png"&gt;&lt;img src="selenium-screenshot-155.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:49.657" endtime="20210820 22:25:49.773"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:46.582" endtime="20210820 22:25:49.773"></status>
+</kw>
+<kw name=" verify onclick subject block redirects to respective blocks" library="PolityBooks_Resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${historyblockXpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:25:49.773" level="INFO">Clicking element '//span[contains(text(),'History')]'.</msg>
+<status status="PASS" starttime="20210820 22:25:49.773" endtime="20210820 22:25:49.885"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:51.893" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:49.885" endtime="20210820 22:25:51.893"></status>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${getcurrentURL}</var>
+</assign>
+<msg timestamp="20210820 22:25:51.893" level="INFO">${getcurrentURL} = https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/subjectlanding?subject_slug=history</msg>
+<status status="PASS" starttime="20210820 22:25:51.893" endtime="20210820 22:25:51.893"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${getcurrentURL}</arg>
+</arguments>
+<assign>
+<var>${source}</var>
+</assign>
+<msg timestamp="20210820 22:25:51.893" level="INFO">${source} = https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/subjectlanding?subject_slug=history</msg>
+<status status="PASS" starttime="20210820 22:25:51.893" endtime="20210820 22:25:51.893"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"subject_slug" in """${source}"""</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:51.893" endtime="20210820 22:25:51.893"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:25:52.072" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-156.png"&gt;&lt;img src="selenium-screenshot-156.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:51.893" endtime="20210820 22:25:52.072"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:49.773" endtime="20210820 22:25:52.072"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210820 22:25:52.072" endtime="20210820 22:25:54.484"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:25:32.616" endtime="20210820 22:25:54.484" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="Polity-41_Home Page Slider sould appear with Book Image">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:25:54.488" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:25:54.487" endtime="20210820 22:25:57.721"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:25:57.721" endtime="20210820 22:25:57.897"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:25:59.899" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:25:57.897" endtime="20210820 22:25:59.899"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:25:59.899" endtime="20210820 22:25:59.910"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:00.089" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-157.png"&gt;&lt;img src="selenium-screenshot-157.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:25:59.910" endtime="20210820 22:26:00.089"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:25:54.487" endtime="20210820 22:26:00.089"></status>
+</kw>
+<kw name="verify home page slider" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:02.109" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:00.089" endtime="20210820 22:26:02.109"></status>
+</kw>
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath:${bookimagexpath}</arg>
+</arguments>
+<assign>
+<var>${Alllinkcountimage}</var>
+</assign>
+<msg timestamp="20210820 22:26:02.125" level="INFO">${Alllinkcountimage} = 4</msg>
+<status status="PASS" starttime="20210820 22:26:02.109" endtime="20210820 22:26:02.125"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Alllinkcountimage}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:02.125" endtime="20210820 22:26:02.125"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>@{LinkItems}</var>
+</assign>
+<msg timestamp="20210820 22:26:02.125" level="INFO">@{LinkItems} = [ ]</msg>
+<status status="PASS" starttime="20210820 22:26:02.125" endtime="20210820 22:26:02.125"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | ${Alllinkcountimage} ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//img[contains(@src,'https://politybooks.com/wp-content/uploads/2020/05/')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${linkText}</var>
+</assign>
+<msg timestamp="20210820 22:26:02.180" level="INFO">${linkText} = </msg>
+<status status="PASS" starttime="20210820 22:26:02.125" endtime="20210820 22:26:02.180"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${linkText}}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:02.180" endtime="20210820 22:26:02.180"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:02.125" endtime="20210820 22:26:02.180"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//img[contains(@src,'https://politybooks.com/wp-content/uploads/2020/05/')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${linkText}</var>
+</assign>
+<msg timestamp="20210820 22:26:02.214" level="INFO">${linkText} = </msg>
+<status status="PASS" starttime="20210820 22:26:02.180" endtime="20210820 22:26:02.214"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${linkText}}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:02.214" endtime="20210820 22:26:02.214"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:02.180" endtime="20210820 22:26:02.214"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//img[contains(@src,'https://politybooks.com/wp-content/uploads/2020/05/')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${linkText}</var>
+</assign>
+<msg timestamp="20210820 22:26:02.245" level="INFO">${linkText} = </msg>
+<status status="PASS" starttime="20210820 22:26:02.214" endtime="20210820 22:26:02.245"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${linkText}}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:02.245" endtime="20210820 22:26:02.245"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:02.214" endtime="20210820 22:26:02.245"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:02.125" endtime="20210820 22:26:02.245"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${homePageSliderxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:02.245" level="INFO">Clicking element '//img[contains(@src,'data:image/png')]'.</msg>
+<status status="PASS" starttime="20210820 22:26:02.245" endtime="20210820 22:26:02.370"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:04.376" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:02.371" endtime="20210820 22:26:04.376"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:04.528" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-158.png"&gt;&lt;img src="selenium-screenshot-158.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:04.376" endtime="20210820 22:26:04.528"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${homePageSliderxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:04.528" level="INFO">Clicking element '//img[contains(@src,'data:image/png')]'.</msg>
+<status status="PASS" starttime="20210820 22:26:04.528" endtime="20210820 22:26:04.584"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${homePageSliderxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:04.619" level="INFO">Current page contains image '//img[contains(@src,'data:image/png')]'.</msg>
+<status status="PASS" starttime="20210820 22:26:04.584" endtime="20210820 22:26:04.619"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${homePageSliderxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:04.619" level="INFO">Clicking element '//img[contains(@src,'data:image/png')]'.</msg>
+<status status="PASS" starttime="20210820 22:26:04.619" endtime="20210820 22:26:04.689"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:05.002" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-159.png"&gt;&lt;img src="selenium-screenshot-159.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:04.689" endtime="20210820 22:26:05.002"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:00.089" endtime="20210820 22:26:05.003"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210820 22:26:05.004" endtime="20210820 22:26:08.497"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:25:54.484" endtime="20210820 22:26:08.497" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t5" name="Polity-41_Home Page Slider sould appear with Book Title">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:08.501" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:26:08.501" endtime="20210820 22:26:11.643"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:26:11.643" endtime="20210820 22:26:11.800"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:13.802" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:11.800" endtime="20210820 22:26:13.802"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:13.802" endtime="20210820 22:26:13.820"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:13.967" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-160.png"&gt;&lt;img src="selenium-screenshot-160.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:13.820" endtime="20210820 22:26:13.967"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:08.500" endtime="20210820 22:26:13.967"></status>
+</kw>
+<kw name="Verify Book Title in Landing page" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:15.975" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:13.967" endtime="20210820 22:26:15.975"></status>
+</kw>
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath:${bookTitleXpath}</arg>
+</arguments>
+<assign>
+<var>${Alllinkscount}</var>
+</assign>
+<msg timestamp="20210820 22:26:15.991" level="INFO">${Alllinkscount} = 1</msg>
+<status status="PASS" starttime="20210820 22:26:15.975" endtime="20210820 22:26:15.991"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Alllinkscount}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:15.991" endtime="20210820 22:26:15.991"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${bookTitleXpath}</arg>
+</arguments>
+<assign>
+<var>${linkText}</var>
+</assign>
+<msg timestamp="20210820 22:26:16.016" level="INFO">${linkText} = Pandemic!</msg>
+<status status="PASS" starttime="20210820 22:26:15.991" endtime="20210820 22:26:16.016"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>len('${linkText}')&gt;0</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:16.016" endtime="20210820 22:26:16.016"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${linkText}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:16.016" endtime="20210820 22:26:16.016"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:13.967" endtime="20210820 22:26:16.016"></status>
+</kw>
+<kw name="Verify Home Page Slider sould appear with Book Author Name" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:18.018" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:16.016" endtime="20210820 22:26:18.018"></status>
+</kw>
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath:${authornameXpath}</arg>
+</arguments>
+<assign>
+<var>${Authorname}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.018" level="INFO">${Authorname} = 1</msg>
+<status status="PASS" starttime="20210820 22:26:18.018" endtime="20210820 22:26:18.018"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Authorname}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:18.018" endtime="20210820 22:26:18.018"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//a)[15]</arg>
+</arguments>
+<assign>
+<var>${lintext1}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.067" level="INFO">${lintext1} = Pandemic!</msg>
+<status status="PASS" starttime="20210820 22:26:18.034" endtime="20210820 22:26:18.068"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${lintext1}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:18.068" endtime="20210820 22:26:18.068"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//a)[16]</arg>
+</arguments>
+<assign>
+<var>${lintext2}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.091" level="INFO">${lintext2} = COVID-19 Shakes the World</msg>
+<status status="PASS" starttime="20210820 22:26:18.068" endtime="20210820 22:26:18.091"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${lintext2}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:18.091" endtime="20210820 22:26:18.091"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//a)[17]</arg>
+</arguments>
+<assign>
+<var>${lintext3}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.122" level="INFO">${lintext3} = Slavoj ┼╜i┼╛ek</msg>
+<status status="PASS" starttime="20210820 22:26:18.091" endtime="20210820 22:26:18.122"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${lintext3}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:18.122" endtime="20210820 22:26:18.137"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${lintext1}</arg>
+</arguments>
+<assign>
+<var>${linklength1}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.137" level="INFO">Length is 9</msg>
+<msg timestamp="20210820 22:26:18.137" level="INFO">${linklength1} = 9</msg>
+<status status="PASS" starttime="20210820 22:26:18.137" endtime="20210820 22:26:18.137"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${lintext2}</arg>
+</arguments>
+<assign>
+<var>${linklength2}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.137" level="INFO">Length is 25</msg>
+<msg timestamp="20210820 22:26:18.137" level="INFO">${linklength2} = 25</msg>
+<status status="PASS" starttime="20210820 22:26:18.137" endtime="20210820 22:26:18.137"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${lintext3}</arg>
+</arguments>
+<assign>
+<var>${linklength3}</var>
+</assign>
+<msg timestamp="20210820 22:26:18.137" level="INFO">Length is 14</msg>
+<msg timestamp="20210820 22:26:18.137" level="INFO">${linklength3} = 14</msg>
+<status status="PASS" starttime="20210820 22:26:18.137" endtime="20210820 22:26:18.137"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:16.016" endtime="20210820 22:26:18.137"></status>
+</kw>
+<kw name="verify Home Page Slider sould appear with Read More Option" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:20.153" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:18.137" endtime="20210820 22:26:20.153"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${ReadmoreXpath}</arg>
+</arguments>
+<assign>
+<var>${readmore}</var>
+</assign>
+<msg timestamp="20210820 22:26:20.198" level="INFO">${readmore} = Read More</msg>
+<status status="PASS" starttime="20210820 22:26:20.153" endtime="20210820 22:26:20.198"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>len('${readmore}')&gt;0</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:20.198" endtime="20210820 22:26:20.198"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${readmore}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:20.198" endtime="20210820 22:26:20.198"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:18.137" endtime="20210820 22:26:20.198"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210820 22:26:20.198" endtime="20210820 22:26:22.676"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:26:08.500" endtime="20210820 22:26:22.676" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t6" name="POLITY-42_Verify On click read more redirected to book detail page">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:22.681" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:26:22.681" endtime="20210820 22:26:25.810"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:26:25.810" endtime="20210820 22:26:25.950"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:27.954" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:25.950" endtime="20210820 22:26:27.954"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:27.954" endtime="20210820 22:26:27.970"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:28.118" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-161.png"&gt;&lt;img src="selenium-screenshot-161.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:27.970" endtime="20210820 22:26:28.118"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:22.680" endtime="20210820 22:26:28.118"></status>
+</kw>
+<kw name="Verify On click read more redirected to book detail page" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:30.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:28.119" endtime="20210820 22:26:30.120"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ReadmoreXpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:30.120" level="INFO">Clicking element '(//div[contains(@class,'slider_content')]//..//a[contains(@href,'dev')])[3]'.</msg>
+<status status="PASS" starttime="20210820 22:26:30.120" endtime="20210820 22:26:30.702"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:32.712" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:30.702" endtime="20210820 22:26:32.712"></status>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${getcurrentURLofbookdetail}</var>
+</assign>
+<msg timestamp="20210820 22:26:32.712" level="INFO">${getcurrentURLofbookdetail} = https://dev-politybooks.wiley.com/bookdetail/?book_slug=pandemic--9781509546107</msg>
+<status status="PASS" starttime="20210820 22:26:32.712" endtime="20210820 22:26:32.712"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${getcurrentURLofbookdetail}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:32.712" endtime="20210820 22:26:32.712"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${getcurrentURLofbookdetail}</arg>
+</arguments>
+<assign>
+<var>${source1}</var>
+</assign>
+<msg timestamp="20210820 22:26:32.712" level="INFO">${source1} = https://dev-politybooks.wiley.com/bookdetail/?book_slug=pandemic--9781509546107</msg>
+<status status="PASS" starttime="20210820 22:26:32.712" endtime="20210820 22:26:32.712"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"bookdetail" in """${source1}"""</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:32.712" endtime="20210820 22:26:32.712"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:32.863" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-162.png"&gt;&lt;img src="selenium-screenshot-162.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:32.712" endtime="20210820 22:26:32.863"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:28.119" endtime="20210820 22:26:32.863"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210820 22:26:32.863" endtime="20210820 22:26:35.314"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:26:22.679" endtime="20210820 22:26:35.314" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t7" name=" POLITY-43_Verify on Click Book name redirects to Book detail page">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:35.318" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:26:35.318" endtime="20210820 22:26:39.248"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:26:39.248" endtime="20210820 22:26:39.428"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:41.451" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:39.428" endtime="20210820 22:26:41.451"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:41.451" endtime="20210820 22:26:41.469"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:41.598" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-163.png"&gt;&lt;img src="selenium-screenshot-163.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:41.469" endtime="20210820 22:26:41.598"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:35.318" endtime="20210820 22:26:41.598"></status>
+</kw>
+<kw name="Verify on Click Book name redirects to Book detail page" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:43.599" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:41.598" endtime="20210820 22:26:43.599"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${homePageSliderxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:43.599" level="INFO">Clicking element '//img[contains(@src,'data:image/png')]'.</msg>
+<status status="PASS" starttime="20210820 22:26:43.599" endtime="20210820 22:26:43.716"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:45.720" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:43.716" endtime="20210820 22:26:45.720"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${booktitlegenricxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:45.720" level="INFO">Clicking element '(//div[contains(@class,'slider_content')]//..//a[contains(@href,'politybooks')])[21]'.</msg>
+<status status="PASS" starttime="20210820 22:26:45.720" endtime="20210820 22:26:50.863"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:52.866" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:50.863" endtime="20210820 22:26:52.866"></status>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${getbookurl}</var>
+</assign>
+<msg timestamp="20210820 22:26:52.873" level="INFO">${getbookurl} = https://politybooks.com/bookdetail/?isbn=9781509526864</msg>
+<status status="PASS" starttime="20210820 22:26:52.866" endtime="20210820 22:26:52.873"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${getbookurl}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:52.873" endtime="20210820 22:26:52.873"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"bookdetail" in """${getbookurl}"""</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:52.873" endtime="20210820 22:26:52.873"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:26:53.020" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-164.png"&gt;&lt;img src="selenium-screenshot-164.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:52.873" endtime="20210820 22:26:53.020"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:41.598" endtime="20210820 22:26:53.020"></status>
+</kw>
+<kw name="Close All Browser" type="teardown">
+<msg timestamp="20210820 22:26:53.036" level="FAIL">No keyword with name 'Close All Browser' found. Did you mean:
+    Selenium2Library.Close All Browsers
+    Selenium2Library.Close Browser</msg>
+<status status="FAIL" starttime="20210820 22:26:53.036" endtime="20210820 22:26:53.036">No keyword with name 'Close All Browser' found. Did you mean:
+    Selenium2Library.Close All Browsers
+    Selenium2Library.Close Browser</status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="FAIL" starttime="20210820 22:26:35.317" endtime="20210820 22:26:53.036" critical="yes">Teardown failed:
+No keyword with name 'Close All Browser' found. Did you mean:
+    Selenium2Library.Close All Browsers
+    Selenium2Library.Close Browser</status>
+</test>
+<test id="s1-s1-s1-t8" name=" POLITY-44_Verify on click Author Name redirects to Author page">
+<kw name="Open POLITY books site" library="PolityBooks_Resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${TestingServerUrl}</arg>
+<arg>${BROWSER1}</arg>
+</arguments>
+<msg timestamp="20210820 22:26:53.036" level="INFO">Opening browser 'chrome' to base url 'https://devmonkey:d3Vm0nK3y@dev-politybooks.wiley.com/'.</msg>
+<status status="PASS" starttime="20210820 22:26:53.036" endtime="20210820 22:26:57.139"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210820 22:26:57.139" endtime="20210820 22:26:57.276"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:26:59.281" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:26:57.276" endtime="20210820 22:26:59.282"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${PolityimageXpath}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:26:59.282" endtime="20210820 22:26:59.395"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:27:00.949" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-165.png"&gt;&lt;img src="selenium-screenshot-165.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:26:59.396" endtime="20210820 22:27:00.949"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:26:53.036" endtime="20210820 22:27:00.949"></status>
+</kw>
+<kw name="Verify on click Author Name redirects to Author page" library="PolityBooks_Resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:27:02.958" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:27:00.949" endtime="20210820 22:27:02.958"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${homePageSliderxpath}</arg>
+</arguments>
+<msg timestamp="20210820 22:27:02.958" level="INFO">Clicking element '//img[contains(@src,'data:image/png')]'.</msg>
+<status status="PASS" starttime="20210820 22:27:02.958" endtime="20210820 22:27:03.085"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210820 22:27:05.096" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210820 22:27:03.086" endtime="20210820 22:27:05.096"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${authornamexpathn}</arg>
+</arguments>
+<msg timestamp="20210820 22:27:05.096" level="INFO">Clicking element '(//div[contains(@class,'slider_content')]//..//a[contains(@href,'politybooks')])[23]'.</msg>
+<status status="PASS" starttime="20210820 22:27:05.096" endtime="20210820 22:27:14.459"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210820 22:27:17.468" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210820 22:27:14.459" endtime="20210820 22:27:17.468"></status>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${getauthorurl}</var>
+</assign>
+<msg timestamp="20210820 22:27:17.468" level="INFO">${getauthorurl} = https://politybooks.com/author-books/?authid=Izabela%20Wagner</msg>
+<status status="PASS" starttime="20210820 22:27:17.468" endtime="20210820 22:27:17.468"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${getauthorurl}</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:27:17.468" endtime="20210820 22:27:17.468"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>"author-books" in """${getauthorurl}"""</arg>
+</arguments>
+<status status="PASS" starttime="20210820 22:27:17.468" endtime="20210820 22:27:17.477"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210820 22:27:17.809" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-166.png"&gt;&lt;img src="selenium-screenshot-166.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210820 22:27:17.477" endtime="20210820 22:27:17.809"></status>
+</kw>
+<status status="PASS" starttime="20210820 22:27:00.949" endtime="20210820 22:27:17.809"></status>
+>>>>>>> b5d0d4c3727e4490d6633700c9be3c4eae0281a6
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<<<<<<< HEAD
+<status status="PASS" starttime="20210810 16:43:15.923" endtime="20210810 16:43:18.385"/>
+</kw>
+<status status="PASS" starttime="20210810 16:43:09.865" endtime="20210810 16:43:18.385"/>
+</test>
+<status status="PASS" starttime="20210810 16:43:09.441" endtime="20210810 16:43:18.385"/>
+</suite>
+<status status="PASS" starttime="20210810 16:43:09.436" endtime="20210810 16:43:18.392"/>
+</suite>
+<status status="PASS" starttime="20210810 16:43:09.397" endtime="20210810 16:43:18.392"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+=======
+<status status="PASS" starttime="20210820 22:27:17.809" endtime="20210820 22:27:22.495"></status>
+</kw>
+<tags>
+<tag>QA</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20210820 22:26:53.036" endtime="20210820 22:27:22.495" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20210820 22:24:42.899" endtime="20210820 22:27:22.497"></status>
+</suite>
+<status status="FAIL" starttime="20210820 22:24:42.898" endtime="20210820 22:27:22.502"></status>
+</suite>
+<status status="FAIL" starttime="20210820 22:24:42.843" endtime="20210820 22:27:22.502"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="1">Critical Tests</stat>
+<stat pass="7" fail="1">All Tests</stat>
+>>>>>>> b5d0d4c3727e4490d6633700c9be3c4eae0281a6
+</total>
+<tag>
+<stat pass="7" fail="1">QA</stat>
+<stat pass="7" fail="1">Regression</stat>
+<stat pass="7" fail="1">Sanity</stat>
+</tag>
+<suite>
+<<<<<<< HEAD
+<stat pass="1" fail="0" skip="0" id="s1" name="PolityBooks Automation Project">PolityBooks Automation Project</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="PolityBooks Automation Testsuite">PolityBooks Automation Project.PolityBooks Automation Testsuite</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="PolityBooks Testsuite">PolityBooks Automation Project.PolityBooks Automation Testsuite.PolityBooks Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+=======
+<stat pass="7" fail="1" id="s1" name="PolityBooks Automation Project">PolityBooks Automation Project</stat>
+<stat pass="7" fail="1" id="s1-s1" name="PolityBooks Automation Testsuite">PolityBooks Automation Project.PolityBooks Automation Testsuite</stat>
+<stat pass="7" fail="1" id="s1-s1-s1" name="PolityBooks Testsuite">PolityBooks Automation Project.PolityBooks Automation Testsuite.PolityBooks Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210820 22:24:42.814" level="ERROR">Taking listener 'C:\Users\BMUKHE~1\AppData\Local\Temp\1\RobotTempDir15518445400718440907\TestRunnerAgent.py:60972' into use failed: Importing listener 'C:\Users\BMUKHE~1\AppData\Local\Temp\1\RobotTempDir15518445400718440907\TestRunnerAgent.py' failed: ModuleNotFoundError: No module named 'robot.parsing.populators'
+Traceback (most recent call last):
+  File "C:\Users\BMUKHE~1\AppData\Local\Temp\1\RobotTempDir15518445400718440907\TestRunnerAgent.py", line 72, in &lt;module&gt;
+    from robot.parsing.populators import READERS
+PYTHONPATH:
+  C:\Users\bmukherjee\PolityBooks_Automation_Project
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  C:\Program Files\Python38\lib\site-packages</msg>
+>>>>>>> b5d0d4c3727e4490d6633700c9be3c4eae0281a6
+</errors>
+</robot>
