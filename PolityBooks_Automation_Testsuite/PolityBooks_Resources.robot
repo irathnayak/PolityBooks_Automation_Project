@@ -23,7 +23,7 @@ Resource   PolityBooks_Resources.robot
 
 
 Open POLITY books site
-    Open browser    ${TestingServerUrl}     ${BROWSER2} headless
+    Open browser    ${TestingServerUrl}     ${BROWSER1} headless
     Maximize Browser Window
     Sleep    2s    
     wait until page contains element    ${PolityimageXpath}
