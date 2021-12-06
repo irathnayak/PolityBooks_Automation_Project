@@ -34,7 +34,7 @@ Open POLITY books site
 ################################################################ Resources By Bitan ######################################################
 
 Open series page in polity books
-    Open Browser    ${seriesUrl}    ${BROWSER2}
+    Open Browser    ${seriesUrl}    ${BROWSER2} headless
     Sleep    2s
     Maximize Browser Window
     Sleep    2s    
