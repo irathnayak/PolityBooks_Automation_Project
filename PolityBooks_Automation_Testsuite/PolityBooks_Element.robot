@@ -11,7 +11,7 @@ Library  BuiltIn
 
 #########################COMMON VARIABLES#########################
 ${BROWSER1}     chrome
-${BROWSER2}    firefox
+${BROWSER2}    headlessfirefox
 
 ${breadcrumsHomexpath}    //a[text()='Home']
 ${breadcrumsOurseries}    //li/span[text()='Our Series']   
