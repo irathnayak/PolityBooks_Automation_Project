@@ -23,7 +23,7 @@ Resource   PolityBooks_Resources.robot
 
 
 Open POLITY books site
-    Open browser    ${TestingServerUrl}     ${BROWSER1} headless
+    Open browser    ${TestingServerUrl}     ${BROWSER2} headless
     Maximize Browser Window
     Sleep    2s    
     wait until page contains element    ${PolityimageXpath}
@@ -34,7 +34,7 @@ Open POLITY books site
 ################################################################ Resources By Bitan ######################################################
 
 Open series page in polity books
-    Open Browser    ${seriesUrl}    ${BROWSER1}
+    Open Browser    ${seriesUrl}    ${BROWSER2}
     Sleep    2s
     Maximize Browser Window
     Sleep    2s    
