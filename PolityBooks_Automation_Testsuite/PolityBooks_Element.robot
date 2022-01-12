@@ -19,8 +19,12 @@ ${MenuDropDown}     //*[contains(text(),'MENU')]
 #########################COMMON VARIABLES#########################
 
 
-${TestingServerUrl}    https://devmonkey:d3Vm0nK3y@dev.politybooks.wiley.host/
-${seriesUrl}    https://devmonkey:d3Vm0nK3y@dev.politybooks.wiley.host/series/
+#${TestingServerUrl}    https://devmonkey:d3Vm0nK3y@dev.politybooks.wiley.host/
+#${seriesUrl}    https://devmonkey:d3Vm0nK3y@dev.politybooks.wiley.host/series/
+
+${TestingServerUrl}    https://dev.politybooks.wiley.host/
+${seriesUrl}    https://dev.politybooks.wiley.host/series/
+
 ${ourseriesxpath}    //div[contains(text(),'Our Series')]
 # ${PolityimageXpath}    //body/div[@id='root']/div[1]/div[2]/div[1]/nav[1]/div[1]/div[1]/a[1]/img[1]
 # ${Subject headerXpath}    //a[contains(text(),'Subjects')]
